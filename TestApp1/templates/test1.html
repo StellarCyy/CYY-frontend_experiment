@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ meta_description }}">
+    <link rel="stylesheet" type="text/css" href="{% static 'TestApp1/style.css' %}">
+</head>
+<body>
+<h1>这是一个标题</h1>
+<p>这是一个段落</p>
+<h1>这是另一个标题</h1>
+<p>这是另一个段落
+<a href="https://www.runoob.com/">这是一个链接</a>
+<br>
+<a href="https://www.runoob.com/">
+    <img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="https://www.runoob.com/images/logo.png" width="50%" height="50%" alt="菜鸟教程" />
+</a>
+</p>
+<br>
+<!--
+这里不允许发电
+-->
+<a href="#NamelessDeity_species_picture">光神物种包</a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="NamelessDeity_species_picture">索琳！索琳！索琳！<sup>索琳！</sup></div>
+<hr />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_1.png' %}" width="200" height="200" alt="NamelessDeity_species_3_1" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_2.png' %}" width="200" height="200" alt="NamelessDeity_species_3_2" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_4_1.png' %}" width="200" height="200" alt="NamelessDeity_species_4_1" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_4_2.png' %}" width="200" height="200" alt="NamelessDeity_species_4_2" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_5_1.png' %}" width="200" height="200" alt="NamelessDeity_species_5_1" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_5_2.png' %}" width="200" height="200" alt="NamelessDeity_species_5_2" />
+<div style="padding: 20px; background: #f0f0f0; margin: 20px 0;">
+    <h3>简单留言板</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="user_input" placeholder="输入测试内容..."
+               style="width: 70%; padding: 8px;">
+        <button type="submit" style="padding: 8px 15px;">提交</button>
+    </form>
+    {% if submitted_data %}
+        <p style="color: green; margin-top: 10px;">
+            ✅ 已提交: {{ submitted_data }}
+        </p>
+    {% endif %}
+</div>
+</body>
+</html>

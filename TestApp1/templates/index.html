@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>进入页面</title>
+        <style>
+        .nav-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .nav-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    {% load static %}
+</head>
+<body>
+<h1>这是一个标题</h1>
+<p>这是一个段落</p>
+<h1>这是另一个标题</h1>
+<p>这是另一个段落
+<a href="https://www.runoob.com/">{{ title }}</a>
+</p>
+<br>
+<!--
+这里不允许发电
+-->
+<p>索琳！索琳！索琳！<sup>索琳！</sup></p>
+<hr />
+<button class="nav-button" title="前往HTML1页面" onclick="location.href='test1.html'">前往HTML1页面</button>
+<br>
+<a href="test1.html" target="_blank ">
+    <img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_1.png' %}" width="200" height="200" alt="NamelessDeity_species_3_1" />
+</a>
+</body>
+</html>
