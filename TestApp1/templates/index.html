@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
-    <title>进入页面</title>
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_1.png' %}">
         <style>
+            body {background-image: url("{% static 'assets/images/background/eternal_garden.png' %}")}
         .nav-button {
             background-color: #4CAF50;
             color: white;
@@ -18,14 +21,13 @@
             background-color: #45a049;
         }
     </style>
-    {% load static %}
 </head>
 <body>
 <h1>这是一个标题</h1>
 <p>这是一个段落</p>
 <h1>这是另一个标题</h1>
 <p>这是另一个段落
-<a href="https://www.runoob.com/">{{ title }}</a>
+<a href="https://www.runoob.com/" style="text-decoration: none;">菜鸟教程</a>
 </p>
 <br>
 <!--
@@ -36,7 +38,26 @@
 <button class="nav-button" title="前往HTML1页面" onclick="location.href='test1.html'">前往HTML1页面</button>
 <br>
 <a href="test1.html" target="_blank ">
-    <img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_1.png' %}" width="200" height="200" alt="NamelessDeity_species_3_1" />
+    <img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_8_2.png' %}" width="200" height="200" alt="NamelessDeity_species_8_1" />
 </a>
+<br>
+<button class="nav-button" title="前往HTML2页面" onclick="location.href='test2.html'">前往HTML2页面</button>
+<br>
+<button class="nav-button" title="前往HTML3页面" onclick="location.href='test3.html'">前往HTML3页面</button>
+<br>
+<button class="nav-button" title="前往HTML4页面" onclick="location.href='test4.html'">前往HTML4页面</button>
+<br>
+<button class="nav-button" title="前往HTML5页面" onclick="location.href='test5.html'">前往HTML5页面</button>
+<br>
+<button class="nav-button" title="前往HTML6页面" onclick="location.href='test6.html'">前往HTML6页面</button>
+<br>
+<button class="nav-button" title="前往HTML7页面" onclick="location.href='test7.html'">前往HTML7页面</button>
+<br>
+<button class="nav-button" title="前往HTML8页面" onclick="location.href='test8.html'">前往HTML8页面</button>
+<br>
+<button class="nav-button" title="前往HTML9页面" onclick="location.href='test9.html'">前往HTML9页面</button>
+<br>
+<button class="nav-button" title="前往HTML10页面" onclick="location.href='test10.html'">前往HTML10页面</button>
+<br>
 </body>
 </html>

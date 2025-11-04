@@ -29,7 +29,10 @@ def get_client_ip(request):
     return ip
 def index(request):
     context = {
-        'Title':'Hello World',
+        'title': '首页 - 我的网站',
+        'meta_description': '欢迎访问我的网站',
+        'meta_keywords': '首页,欢迎',
+        'meta_author': '网站管理员',
     }
     return render(request,'index.html',context)
 

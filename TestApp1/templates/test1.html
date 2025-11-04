@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <title>{{ title }}</title>
     <meta name="description" content="{{ meta_description }}">
+    <meta name="keywords" content="{{ meta_keywords }}">
+    <link rel="shortcut icon" href="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_1.png' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'TestApp1/style.css' %}">
+    <style>
+        h2 {color: red;}
+        p {color: blue}
+    </style>
 </head>
 <body>
 <h1>这是一个标题</h1>
-<p>这是一个段落</p>
-<h1>这是另一个标题</h1>
+<p style="color: pink;margin-left: 50px;font-family: 'SimSun-ExtB','宋体',serif;font-size: 20px">这是一个段落</p>
+<h2>这是另一个标题</h2>
 <p>这是另一个段落
 <a href="https://www.runoob.com/">这是一个链接</a>
 <br>
@@ -24,14 +30,14 @@
 -->
 <a href="#NamelessDeity_species_picture">光神物种包</a>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div id="NamelessDeity_species_picture">索琳！索琳！索琳！<sup>索琳！</sup></div>
+<div id="NamelessDeity_species_picture" style="text-align:center">索琳！索琳！索琳！<sup>索琳！</sup></div>
 <hr />
-<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_1.png' %}" width="200" height="200" alt="NamelessDeity_species_3_1" />
-<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_2.png' %}" width="200" height="200" alt="NamelessDeity_species_3_2" />
-<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_4_1.png' %}" width="200" height="200" alt="NamelessDeity_species_4_1" />
-<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_4_2.png' %}" width="200" height="200" alt="NamelessDeity_species_4_2" />
-<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_5_1.png' %}" width="200" height="200" alt="NamelessDeity_species_5_1" />
-<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='white'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_5_2.png' %}" width="200" height="200" alt="NamelessDeity_species_5_2" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_1.png' %}" width="200" height="200" alt="NamelessDeity_species_3_1" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_3_2.png' %}" width="200" height="200" alt="NamelessDeity_species_3_2" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_4_1.png' %}" width="200" height="200" alt="NamelessDeity_species_4_1" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_4_2.png' %}" width="200" height="200" alt="NamelessDeity_species_4_2" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_5_1.png' %}" width="200" height="200" alt="NamelessDeity_species_5_1" />
+<img onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor='transparent'" src="{% static 'assets/images/NamelessDeity_species/NamelessDeity_species_5_2.png' %}" width="200" height="200" alt="NamelessDeity_species_5_2" />
 <div style="padding: 20px; background: #f0f0f0; margin: 20px 0;">
     <h3>简单留言板</h3>
     <form method="POST">
